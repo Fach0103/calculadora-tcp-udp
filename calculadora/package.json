@@ -1,0 +1,10 @@
+{
+  "name": "calculadora",
+  "version": "1.0.0",
+  "description": "Llamadas remotas a clases por TCP/UDP con Node.js",
+  "scripts": {
+    "servidor": "node servidor/comunicacion/tcpServer.js 127.0.0.1 8080",
+    "cliente": "node cliente/cliente.js"
+  },
+  "license": "ISC"
+}
