@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "description": "Llamadas remotas a clases por TCP/UDP con Node.js",
   "scripts": {
-    "servidor": "node servidor/comunicacion/tcpServer.js 0.0.0.0 8080",
-    "servidor:tcp": "node servidor/comunicacion/tcpServer.js 0.0.0.0 8080",
-    "servidor:udp": "node servidor/comunicacion/udpServer.js 0.0.0.0 8081",
+    "servidor": "node servidor/comunicacion/server.js 0.0.0.0 8080",
     "cliente": "node cliente/Cliente.js",
+    "cliente:ambos": "node cliente/Cliente.js 127.0.0.1 8080 ambos",
     "cliente:tcp": "node cliente/Cliente.js 127.0.0.1 8080 tcp",
-    "cliente:udp": "node cliente/Cliente.js 127.0.0.1 8081 udp"
+    "cliente:udp": "node cliente/Cliente.js 127.0.0.1 8080 udp"
   },
   "license": "ISC"
 }

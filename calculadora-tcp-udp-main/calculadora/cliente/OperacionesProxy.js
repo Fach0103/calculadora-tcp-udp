@@ -1,8 +1,8 @@
 const ProxyRemoto = require("./ProxyRemoto");
 
 class OperacionesProxy extends ProxyRemoto {
-    constructor() {
-        super("Operaciones.js", "Operaciones");
+    constructor(protocol) {
+        super("Operaciones.js", "Operaciones", protocol);
     }
 }
 

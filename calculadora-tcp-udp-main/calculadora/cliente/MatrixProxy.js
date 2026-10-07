@@ -1,8 +1,8 @@
 const ProxyRemoto = require("./ProxyRemoto");
 
 class MatrixProxy extends ProxyRemoto {
-    constructor() {
-        super("Matrix.js", "Matrix");
+    constructor(protocol) {
+        super("Matrix.js", "Matrix", protocol);
     }
 }
 

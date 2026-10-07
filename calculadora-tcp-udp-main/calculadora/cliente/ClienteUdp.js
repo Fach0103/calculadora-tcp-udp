@@ -2,7 +2,7 @@
 const dgram = require("dgram");
 
 class ClienteUdp {
-    constructor(host = "127.0.0.1", port = 8081) {
+    constructor(host = "127.0.0.1", port = 8080) {
         this.host = host;
         this.port = port;
         this.socket = null;
